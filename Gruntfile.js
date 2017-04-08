@@ -6,7 +6,10 @@ module.exports = function(grunt) {
         // JS TASKS ================================================================
         // check all js files for errors
         jshint: {
-            all: ['public/src/js/**/*.js']
+            all: ['public/js/*.js','public/js/*/*.js','public/views/*.js'],
+            options: {
+                reporterOutput: ''
+            }
         },
 
         // take all the js files and minify them into app.min.js
@@ -21,7 +24,7 @@ module.exports = function(grunt) {
             options: {},
             local_dependencies: {
                 files: {
-                    'index.html': ['**/*.js', '**/*.css'],
+                    'index.html': ['**/*.js','**/*/*.js', '**/*.css'],
                 }
             }
         },
@@ -70,6 +73,11 @@ module.exports = function(grunt) {
                 logConcurrentOutput: true
             },
             tasks: ['nodemon', 'watch']
+        },
+        wiredep: {
+            target: {
+                src: 'public/index.html' // point to your HTML file.
+            }
         }
 
     });
@@ -81,6 +89,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-wiredep');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
 
