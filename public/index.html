@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<base href="/">
 
-	<title>Starter Node and Angular</title>
+	<title>iLandSound</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -19,7 +19,8 @@
 
 	<!-- ANGULAR CUSTOM -->
 	<script src="views/MainCtrl.js"></script>
-	<script src="views/NerdCtrl.js"></script>
+	<script src="views/NavBarCtrl.js"></script>
+	<script src="views/BodyCtrl.js"></script>
 	<script src="js/services/NerdService.js"></script>
 	<script src="views/GeekCtrl.js"></script>
 	<script src="js/services/GeekService.js"></script>
@@ -32,10 +33,11 @@
 	<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="libs/angular/angular.js"></script>
 	<script src="libs/angular-route/angular-route.js"></script>
+	<script src="libs/angular-scroll/angular-scroll.js"></script>
 	<!-- endbower -->
 </head>
-<body ng-app="sampleApp" ng-controller="NerdController">
-<div>
+<body ng-app="iLandSound">
+<div class="pos-relative">
 	
 	<!-- HEADER -->
 	<ng-include src="'views/navbar.html'"></ng-include>
