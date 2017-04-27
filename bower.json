@@ -5,6 +5,7 @@
 		"bootstrap": "latest",
 		"angular": "latest",
 		"angular-route": "latest",
-		"angular-scroll": "latest"
+		"angular-scroll": "latest",
+		"angular-ui-router": "latest"
 	}
 }

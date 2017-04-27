@@ -17,23 +17,25 @@
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/angular-route/angular-route.min.js"></script>
 
-	<!-- ANGULAR CUSTOM -->
-	<script src="views/MainCtrl.js"></script>
-	<script src="views/NavBarCtrl.js"></script>
-	<script src="js/services/NerdService.js"></script>
-	<script src="views/GeekCtrl.js"></script>
-	<script src="js/services/GeekService.js"></script>
-	<script src="js/appRoutes.js"></script>
-	<script src="js/app.js"></script>
-
-
 	<!-- bower:js -->
 	<script src="libs/jquery/dist/jquery.js"></script>
 	<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="libs/angular/angular.js"></script>
 	<script src="libs/angular-route/angular-route.js"></script>
 	<script src="libs/angular-scroll/angular-scroll.js"></script>
+	<script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
 	<!-- endbower -->
+
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="views/MainCtrl.js"></script>
+	<script src="views/NavBarCtrl.js"></script>
+	<script src="js/services/NerdService.js"></script>
+	<script src="views/GeekCtrl.js"></script>
+	<script src="js/services/GeekService.js"></script>
+	<script src="js/app.js"></script>
+
+
 </head>
 <body ng-app="iLandSound">
 <div class="pos-relative">
@@ -43,7 +45,7 @@
 
 
 	<!-- ANGULAR DYNAMIC CONTENT -->
-	<div ng-view></div>
+	<div ui-view></div>
 
 </div>
 </body>
