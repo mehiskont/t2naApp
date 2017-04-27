@@ -9,7 +9,8 @@ var thisApp = angular
     'GeekCtrl',
     'GeekService',
     'NavBarCtrl',
-    'duScroll']);
+    'duScroll'
+    ]);
 
 thisApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 

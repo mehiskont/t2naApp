@@ -10,30 +10,30 @@ body {
 body section:nth-child(even) {
   background-color: #fafafa;
 }
-main {
+.wip {
   background-color: #fff;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main.frontpage {
+.landing .inner-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
-  max-width: 1000px;
-  margin: auto;
   position: relative;
 }
 .pos-relative {
   position: relative;
 }
 .menu-bar {
-  position: fixed;
-  right: 100px;
-  top: 50px;
   z-index: 10;
+  margin-top: 40px;
 }
 .menu-bar a {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #333;
 }
@@ -51,11 +51,49 @@ section {
 }
 .island-logo {
   width: 300px;
-  position: absolute;
-  left: 0;
-  top: 20px;
+  flex: 0 0 300px;
+  align-self: center;
 }
 .island {
   width: 1000px;
   z-index: 0;
+}
+.main-wrap section .inner-section {
+  max-width: 1200px;
+  margin: auto;
+}
+.main-nav {
+  max-width: 1200px;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: auto;
+  position: fixed;
+  justify-content: flex-end;
+  display: flex;
+}
+.logo-header {
+  max-width: 1200px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+  position: absolute;
+  top: 40px;
+}
+.main-nav__btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  top: 0;
+}
+.icon-burger {
+  background-image: url('/img/ILANDSOUND_menüü-02.svg');
+}
+.icon-cross {
+  background-image: url('/img/ILANDSOUND_X-03.svg');
 }
