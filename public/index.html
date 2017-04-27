@@ -42,7 +42,7 @@
 	
 	<!-- HEADER -->
 
-	<header class="main-nav">
+	<header class="main-nav" ng-controller="NavbarController" ng-hide="$state.includes('wip')">
 		<div class="main-nav__btn" ng-class="openMenu ? 'icon-cross':'icon-burger'" ng-click="openMenu = !openMenu"></div>
 		<ng-include ng-class="openMenu ? '':'hidden'" src="'views/navbar.html'"></ng-include>
 	</header>
